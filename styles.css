@@ -7,12 +7,32 @@
   font-family: Inter;
 }
 
+.body {
+  background-color: #ffffff;
+  height: 100vh;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 25px;
   gap: 10px;
+}
+
+.box-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    290.1deg,
+    #d6e6fe 0%,
+    rgba(214, 252, 254, 0) 100%
+  );
+  width: 375px;
+  padding: 160px;
+  border-radius: 0px 0px 35px 35px;
+  gap: 25px;
 }
 
 .logo {
@@ -39,7 +59,11 @@
   color: #5e6e85;
 }
 
-.box-style {
+.limit-style {
+  margin-top: 37px;
+}
+
+.box-one-style {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,11 +73,13 @@
   padding: 24px;
   border-radius: 16px;
   gap: 24px;
+  transform: translateY(-119px);
+  background-color: white;
 }
 .circle-style {
   display: flex;
   flex-direction: row;
-  gap: 25px;
+  gap: 75px;
 }
 
 .circle-one-style {
@@ -69,6 +95,12 @@
   flex-direction: row;
   gap: 4px;
 }
+
+.details-style {
+  color: #5e6e85;
+  margin-left: -195px;
+}
+
 #eclips {
   width: 23px;
   height: 31px;
@@ -103,6 +135,25 @@
   width: 311px;
 }
 
+.first-icons-style {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.image-style {
+  width: 46px;
+}
+
 .bmi-result-style {
   width: 328px;
+  margin-top: 30px;
+}
+
+.icon-styles {
+  margin-left: -218px;
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  margin-top: 26px;
 }
