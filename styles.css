@@ -263,7 +263,7 @@
   .box-two-style {
     display: flex;
     flex-direction: row;
-    gap: 150px;
+    gap: 273px;
     padding: 10px;
   }
 
@@ -293,7 +293,7 @@
     display: flex;
     flex-direction: row;
     gap: 18px;
-    margin-left: 523px;
+    margin-left: 620px;
     padding: 31px;
   }
 
@@ -301,6 +301,6 @@
     display: flex;
     flex-direction: row;
     gap: 22px;
-    margin-left: 184px;
+    margin-left: 280px;
   }
 }
