@@ -18,6 +18,7 @@
   align-items: center;
   padding: 25px;
   gap: 10px;
+  cursor: pointer;
 }
 
 .box-style {
@@ -107,13 +108,13 @@
   color: #5e6e85;
 }
 
-#height-style {
+#height-input {
   width: 280px;
   padding: 11px;
   border-radius: 11px;
 }
 
-#weight-style {
+#weight-input {
   width: 280px;
   padding: 11px;
   border-radius: 11px;
@@ -240,9 +241,9 @@
     text-align: left;
   }
 
-  .num-bmi-style {
+  /* .num-bmi-style {
     display: none;
-  }
+  } */
 
   .image-bmi-style {
     display: flex;
