@@ -22,6 +22,7 @@ const calculateBmi = () => {
   getBmiResult.textContent = bmi.toFixed(1);
   if (calculateBmi > 0) {
     getBmiResult.style.display = "block";
+  } else {
     welcomeButton.style.display = "none";
   }
 };
