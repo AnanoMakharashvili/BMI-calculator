@@ -222,11 +222,9 @@
 
   .blue-box-style {
     width: 500px;
-    padding: 32px 0px 0px 0px;
     gap: 24px;
     border-radius: 16px 999px 999px 16px;
     flex-direction: row;
-    padding: 13px;
   }
 
   .welcome-style {
@@ -241,10 +239,13 @@
     text-align: left;
   }
 
-  /* .num-bmi-style {
-    display: none;
-  } */
-
+  .num-bmi-style {
+    width: 500px;
+    gap: 24px;
+    border-radius: 16px 999px 999px 16px;
+    flex-direction: row;
+    background: #345ff6;
+  }
   .image-bmi-style {
     display: flex;
     flex-direction: row;

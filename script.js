@@ -1,7 +1,7 @@
 const heightInput = document.getElementById("height-input");
 const weightInput = document.getElementById("weight-input");
-const getBmiButton = document.getElementById("num-bmi-button");
-const welcomeButton = document.getElementById("welcome-button");
+const getBmiResult = document.getElementById("num-bmi-style");
+const welcomeButton = document.getElementById("welcome-style");
 
 let heightValue = 0;
 let weightValue = 0;
@@ -19,5 +19,9 @@ weightInput.addEventListener("input", (event) => {
 const calculateBmi = () => {
   const dividedHeight = heightValue / 100;
   const bmi = weightValue / (dividedHeight * dividedHeight);
-  getBmiButton.textContent = bmi.toFixed(1);
+  getBmiResult.textContent = bmi.toFixed(1);
+  if (calculateBmi > 0) {
+    getBmiResult.style.display = "block";
+    welcomeButton.style.display = "none";
+  }
 };
