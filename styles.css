@@ -130,6 +130,14 @@
   padding: 32px;
   border-radius: 17px;
 }
+.num-style {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 52.8px;
+  letter-spacing: -0.05em;
+  text-align: left;
+}
 .man-eating-style {
   width: 311px;
 }
@@ -221,10 +229,14 @@
   }
 
   .blue-box-style {
+    display: block;
     width: 500px;
     gap: 24px;
     border-radius: 16px 999px 999px 16px;
     flex-direction: row;
+    background-color: #345ff6;
+    color: white;
+    padding: 21px;
   }
 
   .welcome-style {
@@ -237,19 +249,6 @@
     font-weight: 400;
     line-height: 21px;
     text-align: left;
-  }
-
-  .num-bmi-style {
-    width: 500px;
-    gap: 24px;
-    border-radius: 16px 999px 999px 16px;
-    flex-direction: row;
-    background: #345ff6;
-  }
-  .image-bmi-style {
-    display: flex;
-    flex-direction: row;
-    gap: 182px;
   }
 
   .bmi-range-style {

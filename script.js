@@ -20,7 +20,7 @@ const calculateBmi = () => {
   const dividedHeight = heightValue / 100;
   const bmi = weightValue / (dividedHeight * dividedHeight);
   getBmiResult.textContent = bmi.toFixed(1);
-  if (calculateBmi > 0) {
+  if (bmi > 0) {
     getBmiResult.style.display = "block";
   } else {
     welcomeButton.style.display = "none";
