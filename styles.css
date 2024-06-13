@@ -244,8 +244,6 @@
 
   #bmi-suggest {
     display: none;
-    flex-direction: row;
-    gap: 27px;
   }
   .enter-style {
     font-family: Inter;
