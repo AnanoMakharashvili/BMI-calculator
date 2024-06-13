@@ -2,6 +2,7 @@ const heightInput = document.getElementById("height-input");
 const weightInput = document.getElementById("weight-input");
 const getBmiResult = document.getElementById("num-bmi-style");
 const welcomeButton = document.getElementById("welcome-style");
+const getHealthyWeight = document.getElementById("bmi-suggest");
 
 let heightValue = 0;
 let weightValue = 0;
@@ -21,7 +22,7 @@ const calculateBmi = () => {
   const bmi = weightValue / (dividedHeight * dividedHeight);
   getBmiResult.textContent = bmi.toFixed(1);
   if (bmi > 0) {
-    getBmiResult.style.display = "block";
+    getHealthyWeight.style.display = "block";
   } else {
     welcomeButton.style.display = "none";
   }

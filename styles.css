@@ -72,7 +72,6 @@
   border-radius: 16px;
   gap: 24px;
   transform: translateY(-119px);
-  width: 328px;
   background-color: white;
 }
 .circle-style {
@@ -243,6 +242,11 @@
     display: block;
   }
 
+  #bmi-suggest {
+    display: none;
+    flex-direction: row;
+    gap: 27px;
+  }
   .enter-style {
     font-family: Inter;
     font-size: 14px;
