@@ -74,36 +74,37 @@
   transform: translateY(-119px);
   background-color: white;
 }
-.circle-style {
+.metric-imperial-style {
   display: flex;
   flex-direction: row;
-  gap: 75px;
+  gap: 130px;
 }
 
-.circle-one-style {
+.metric-name-style {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-direction: row;
-  gap: 4px;
+  gap: 14px;
 }
 
-.circle-two-style {
+.height-weight-div-style {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-direction: row;
-  gap: 4px;
+  gap: 19px;
+}
+
+.height-section-style {
+  display: flex;
+  flex-direction: column;
+}
+
+.weight-section-style {
+  display: flex;
+  flex-direction: column;
 }
 
 .details-style {
-  color: #5e6e85;
-  margin-left: -195px;
-}
-
-#eclips {
-  width: 23px;
-  height: 31px;
-  background-color: white;
-  border: 1px;
   color: #5e6e85;
 }
 
@@ -111,12 +112,14 @@
   width: 280px;
   padding: 11px;
   border-radius: 11px;
+  border: 1px solid #5e6e85;
 }
 
 #weight-input {
   width: 280px;
   padding: 11px;
   border-radius: 11px;
+  border: 1px solid #5e6e85;
 }
 
 .blue-box-style {
@@ -197,8 +200,17 @@
 .welcome-style {
   display: none;
 }
+.second-box-style {
+  display: none;
+}
 
 @media (min-width: 1024px) {
+  .logo {
+    width: 59px;
+    display: flex;
+    align-self: self-start;
+    margin-left: 45px;
+  }
   .two-boxes-style {
     display: flex;
     flex-direction: row;
@@ -212,7 +224,12 @@
 
   .header-style {
     width: 564px;
-    margin-left: -203px;
+    font-family: Inter;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 70.4px;
+    letter-spacing: -0.05em;
+    text-align: left;
   }
 
   .paragraph-style {
@@ -221,10 +238,18 @@
 
   .box-one-style {
     width: 564px;
-    margin-top: 122px;
+    margin-top: 292px;
     transform: translateX(-93px);
     border: 1px solid white;
     box-shadow: 0 0 15px grey;
+  }
+
+  #height-input {
+    width: 238px;
+  }
+
+  #weight-input {
+    width: 238px;
   }
 
   .blue-box-style {
@@ -236,6 +261,7 @@
     background-color: #345ff6;
     color: white;
     padding: 21px;
+    margin-top: 39px;
   }
 
   .welcome-style {
@@ -258,7 +284,7 @@
     flex-direction: column;
     gap: 16px;
     margin-top: 113px;
-    margin-left: -300px;
+    margin-left: 300px;
   }
 
   .man-eating-style {
@@ -335,5 +361,128 @@
     flex-direction: row;
     gap: 22px;
     margin-left: 280px;
+  }
+
+  .below-box-style {
+    display: none;
+  }
+
+  .second-box-style {
+    display: flex;
+    width: 564px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 13px;
+    padding: 48px;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+  }
+
+  .enter-one-style {
+    margin-left: -300px;
+  }
+
+  .height-weight-element {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .box-three-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 54px;
+  }
+
+  .metric-imperial-style {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 160px;
+    margin-top: 23px;
+  }
+  .height-weight-div-style {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .height-section-style {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .weight-section-style {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .round-style {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+
+  .weight-height-metric-style {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+  }
+  #metric {
+    height: 31px;
+  }
+
+  #Imperial {
+    height: 31px;
+  }
+
+  .input-styles {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+  }
+
+  .click-style {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  #height-ft-input {
+    padding: 11px;
+    border-radius: 12px;
+    border: 1px solid #5e6e85;
+  }
+
+  #weight-st-input {
+    padding: 11px;
+    border-radius: 12px;
+    border: 1px solid #5e6e85;
+  }
+
+  .healthy-weight-bmi-style {
+    width: 500px;
+    padding: 16px;
+    gap: 24px;
+    border-radius: 16px 999px 999px 16px;
+    background-color: #345ff6;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    align-items: center;
   }
 }
