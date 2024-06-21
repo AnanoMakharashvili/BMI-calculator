@@ -3,10 +3,10 @@ const weightInput = document.getElementById("weight-input");
 const getBmiResult = document.getElementById("num-bmi-style");
 const welcomeButton = document.getElementById("welcome-style");
 const getHealthyWeight = document.getElementById("bmi-suggest");
-const getMetricButton = document.getElementById("metric-name");
+const getMetricSection = document.getElementById("metric-name");
 const getImperialRadio = document.getElementById("imperial");
 const getMetricRadio = document.getElementById("metric");
-const bmiLbsElement = document.getElementById(".below-box-style ");
+const getImperialSection = document.getElementById("imperial-section");
 const heightElement = document.getElementById("height-ft-input");
 const weightElement = document.getElementById("weight-st-input");
 const bmiResult = document.getElementById("bmi-lbs");
@@ -38,15 +38,19 @@ weightElement.addEventListener("input", (event) => {
   calculateBmiElement();
 });
 
-if (getMetricRadio.checked) {
-  getMetricRadio.checked = false;
-  getImperialRadio.checked = true;
-} else if (getImperialRadio.checked) {
-  getImperialRadio.checked = false;
-  getMetricRadio.checked = true;
-} else {
-  getMetricRadio.checked = true;
-}
+getImperialRadio.addEventListener("click", (event) => {
+  if (event.target.checked) {
+    getImperialSection.style.display = "flex";
+    getMetricSection.style.display = "none";
+  }
+});
+
+getMetricRadio.addEventListener("click", (event) => {
+  if (event.target.checked) {
+    getImperialSection.style.display = "none";
+    getMetricSection.style.display = "block";
+  }
+});
 
 const calculateBmi = () => {
   const dividedHeight = heightValue / 100;

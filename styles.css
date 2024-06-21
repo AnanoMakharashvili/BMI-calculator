@@ -364,11 +364,11 @@
   }
 
   .below-box-style {
-    display: none;
+    display: block;
   }
 
   .second-box-style {
-    display: flex;
+    display: none;
     width: 564px;
     border: 1px solid white;
     background-color: white;
