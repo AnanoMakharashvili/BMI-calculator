@@ -132,6 +132,37 @@
   padding: 32px;
   border-radius: 17px;
 }
+.second-box-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.healthy-weight-bmi-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  background-color: #345ff6;
+  color: white;
+  padding: 32px;
+  border-radius: 17px;
+}
+
+#height-ft-input {
+  border-radius: 13px;
+  padding: 10px;
+  width: 132;
+  border: 1px solid #5e6e85;
+}
+
+#weight-st-input {
+  border-radius: 13px;
+  padding: 10px;
+  width: 132;
+  border: 1px solid #5e6e85;
+}
 .num-style {
   font-family: Inter;
   font-size: 48px;
